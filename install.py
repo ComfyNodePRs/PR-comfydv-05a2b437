@@ -3,6 +3,7 @@ import sys
 import subprocess
 
 comfydv_path: str = os.path.abspath(os.path.dirname(__file__))
+print(f"ComfyDV path: {comfydv_path}")
 
 if sys.argv[0] == 'install.py':
     sys.path.append('.')   # for portable version
@@ -12,4 +13,5 @@ if comfy_path is None:
     print(f"\n[bold yellow]WARN: The `COMFYUI_PATH` environment variable is not set. Assuming `{os.path.dirname(__file__)}/../../` as the ComfyUI path.[/bold yellow]", file=sys.stderr)
     comfy_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-subprocess.check_output(executable=sys.executable, args=['python', '-m', 'pip', 'install', '.'], cwd=comfydv_path)
+def install():
+    subprocess.check_output(executable=sys.executable, args=['python', '-m', 'pip', 'install', comfydv_path], cwd=comfydv_path)
