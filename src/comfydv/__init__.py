@@ -1,7 +1,7 @@
-from comfydv.circuit_breaker import CircuitBreaker
-from comfydv.format_string import FormatString
-from comfydv.model_unload import ModelUnloader
-from comfydv.random_choice import RandomChoice
+from .circuit_breaker import CircuitBreaker
+from .format_string import FormatString
+from .model_unload import ModelUnloader
+from .random_choice import RandomChoice
 
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
