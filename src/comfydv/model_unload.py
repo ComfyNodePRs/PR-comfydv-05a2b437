@@ -10,7 +10,7 @@ from comfy import model_management  # Adjust based on actual module location
 from rich import print
 from rich.pretty import pprint
 
-from comfydv.utils import any_type
+from .utils import any_type
 
 
 class DEVICE_TYPE(Enum):
