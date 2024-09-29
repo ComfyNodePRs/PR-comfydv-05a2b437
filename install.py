@@ -11,4 +11,4 @@ if comfy_path is None:
     print(f"\n[bold yellow]WARN: The `COMFYUI_PATH` environment variable is not set. Assuming `{os.path.dirname(__file__)}/../../` as the ComfyUI path.[/bold yellow]", file=sys.stderr)
     comfy_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-subprocess.check_output(executable=sys.executable, args=['-m', 'pip', 'install', '.'])
+subprocess.check_output(executable=sys.executable, args=['python', '-m', 'pip', 'install', '.'])
