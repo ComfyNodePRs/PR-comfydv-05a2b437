@@ -1,0 +1,40 @@
+[project]
+name = "comfydv"
+version = "0.1.0"
+description = "ComfyUI Custom Nodes by Darth Veitcher"
+authors = [
+    { name = "darth-veitcher", email = "1722315+darth-veitcher@users.noreply.github.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.5.38",
+    "mkdocstrings[python]>=0.26.1",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-literate-nav>=0.6.1",
+    "mkdocs-section-index>=0.3.9",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/comfydv"]
+
+[project.urls]
+Repository = "https://github.com/darth-veitcher/comfydv"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "darth-veitcher"
+DisplayName = "Comfy DV"
+Icon = ""
