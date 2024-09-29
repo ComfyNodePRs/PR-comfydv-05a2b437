@@ -15,6 +15,6 @@ if comfy_path is None:
 
 def install():
     print(f"Using {sys.executable} to install ComfyDV nodes")
-    subprocess.check_output(executable=sys.executable, args=['-m', 'pip', 'install', comfydv_path], cwd=comfydv_path)
+    subprocess.check_output(executable=sys.executable, args=['python', '-m', 'pip', 'install', comfydv_path], cwd=comfydv_path)
 
 install()
