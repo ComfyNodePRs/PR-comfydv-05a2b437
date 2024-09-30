@@ -14,7 +14,7 @@ from rich import print
 from rich.pretty import pprint
 
 class FormatString:
-    CATEGORY = "string_operations"
+    CATEGORY = "dv/string_operations"
     FUNCTION = "format_string"
     RETURN_TYPES = ("STRING", "STRING")
     RETURN_NAMES = ("formatted_string", "saved_file_path")

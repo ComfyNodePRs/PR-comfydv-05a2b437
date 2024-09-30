@@ -31,7 +31,7 @@ class ModelUnloader:
     RETURN_NAMES = ("passthrough",)
     FUNCTION = "unload_model"
     OUTPUT_NODE = True
-    CATEGORY = "dv/utils"
+    CATEGORY = "dv/experimental"
 
     def __init__(self):
         """Initializes the ModelUnloader class."""
